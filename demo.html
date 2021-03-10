@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .demo-Wrapper{
+          width: 100%;
+      }
+      .main-content-wrp{
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+      .grid-wrp{
+          width: 50%;
+          height: 200px; 
+          margin: 0 auto;
+          background: #eee;
+          padding: 1rem;
+          border-radius: 5px;
+          display:  flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+      .btn-group{
+        width: 50%;
+        transform: translateY(110px);
+        overflow-x: auto;
+      }
+      .btn-group .btn-unorder{
+        display: flex;
+        justify-content:flex-start;
+      }
+      .btn-group .btn-unorder li{
+        border-radius: 5px;
+        padding: .5rem .5rem;
+        background: #eeee;
+        color: #000;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.1em;
+        list-style-type: none;
+        margin: 0 .5rem;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+      }
+      .btn-group .btn-unorder li:hover{
+          transition: all .3s ease-in-out;
+          opacity: .77;
+      }
+      .grid-wrp .d-cmn{
+        width: 48%;
+      }
+      .d1{
+          border-right: 1px solid #999;
+      }
+      .d1 ul li{
+          padding: .8rem  .5rem;
+          margin: .5rem 1rem .5rem 0;
+          list-style-type: none;
+          background: rgba(153, 153, 153, 0.253);
+          transition: all .3s ease-in-out;
+          cursor: pointer;
+      }
+      .d1 ul li:hover{
+        transition: all .3s ease-in-out;
+        background: rgb(139, 139, 139);
+      }
+      .d2{
+          text-align: center;
+      }
+      .d2 h2{
+          border-bottom: 1px solid #999;
+          padding: 0 0 .5rem;
+      }
+      .result-area{
+          width: 100%;
+      }
+      .child-result{
+          width: 100%;
+          overflow-y: auto;
+          height: 150px;
+      }
+      .child-result ol li{
+          list-style-type:unset;
+          padding:.5rem .5rem;
+          background: #999;
+          border-radius: 5px;margin: .5rem 0; 
+      }
+    </style>
+</head>
+<body>
+        <main class="demo-Wrapper">
+            <div class="container">
+                <div class="main-content-wrp">
+                    <div class="btn-group">
+                        <ul class="btn-unorder">
+                            
+                        </ul>
+                    </div>
+                    <div class="grid-wrp"> 
+                        <div class="d1 d-cmn">
+                            <ul class="unorder">
+                                <li class="btn1 btn-cmn">Item1</li>
+                                <li class="btn2 btn-cmn">Item2</li>
+                                <li class="btn3 btn-cmn">Item3</li>
+                            </ul>
+                        </div>
+                        <div class="d2 d-cmn">
+                            <h2>Result</h2>
+                            <div class="result-area">
+                                <div class="child-result">
+                                    <ol>
+                                        <h3 style="display: none;">output</h3>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <!--script---sectionn-->
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-cmn").click(function(){
+                $(".btn-unorder").append("<li>Btn1</li>");
+                $(".btn-unorder>li").addClass("D-btn"); 
+            }); 
+            $("body").on("click",".D-btn", function(){
+                $("ol h3").css("display","block"); 
+                $(".child-result ol").append("<li>output result</li>");  
+            });
+        })
+    </script>
+</body>
+</html>

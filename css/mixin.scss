@@ -1,0 +1,90 @@
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1,h2,h3,h4,h5,h6,li{
+    font-family: 'Asap-SemiBold';
+}
+// li{
+//     list-style-type: none;
+// }
+p{
+    font-family: 'FiraSans-Regular';
+}
+
+ li{
+     list-style-type: none;
+ }
+
+@mixin flex {
+    display: $lex;
+    justify-content: $mid;
+    align-items: $mid;
+    flex-wrap: wrap;
+}
+
+@mixin container {
+    width: 90%;
+    margin: 0 auto;
+}
+@mixin bfr {
+    &::before{
+        content: '';
+        width: 0;
+        height: 100%;
+        background: #eeeeee94;
+        position: absolute;
+        animation: backgrdanime 3s linear infinite;
+        top: 0;
+        left: 0%;
+    }
+}
+@keyframes backgrdanime {
+    0%{
+        width: 0;
+        background-position-x: -300px;
+        transition:all .3s ease-in-out;
+    }
+    99%{
+        width: 100%;
+        background-position-x: 300px;
+        transition:all .3s ease-in-out;
+    }
+    100%{
+        opacity: 0;
+        transition:all .3s ease-in-out;
+    }
+}
+// --------Color-----of------Websites------//
+
+$site-color:#061BB0;
+$fff:#ffffff;
+$lex:flex;
+$mid:center;
+$wrp:wrap;
+$Fend:flex-end;
+$between:space-between;
+$around:space-around;
+$inherit:inherit;
+$N-wrp:nowrap;
+$none:none;
+$cap:capitalize;
+$upper:uppercase;
+$end:flex-end;
+$start:flex-start;
+$init:initial;
+$bld:bold;
+$block:block;
+$inline-b:inline-block;
+$blder:bolder;
+$rel:relative;
+$abs:absolute;
+$hide:hidden; 
+$cover:cover;
+$no-rpt:no-repeat;
+$heading:'Asap-SemiBold';
+$paragraph:'FiraSans-Regular';
+$transition:all .3s ease-in-out;

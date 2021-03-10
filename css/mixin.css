@@ -1,0 +1,57 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Asap-SemiBold';
+}
+
+p {
+  font-family: 'FiraSans-Regular';
+}
+
+li {
+  list-style-type: none;
+}
+
+@-webkit-keyframes backgrdanime {
+  0% {
+    width: 0;
+    background-position-x: -300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  99% {
+    width: 100%;
+    background-position-x: 300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+}
+
+@keyframes backgrdanime {
+  0% {
+    width: 0;
+    background-position-x: -300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  99% {
+    width: 100%;
+    background-position-x: 300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+}
+/*# sourceMappingURL=mixin.css.map */

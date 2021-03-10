@@ -1,0 +1,336 @@
+@media only screen and (max-width:1300px){
+    main .Banner-Wrapper .Banner-content .Bnr-Lft h1, main .Banner-Wrapper .Banner-content .Bnr-Lft h2 {
+        font-size: 2.5em; 
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Lft a {
+        padding: .8rem 2.1rem .8rem 1.5rem; 
+        font-size: 1.3em; 
+    }
+    main .Banner-Wrapper .Banner-content{
+       align-items: baseline;
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Rgt .payment-wrp li p{
+        text-shadow: 1px -1px 1px #fff;
+    }
+}
+@media only screen and (max-width:1200px){
+    .main-bar {
+        right: 40px;
+        top: 39px;
+        display: block !important;
+        cursor: pointer;
+        position: absolute;
+        div {
+            width: 35px;
+            height: 4px;
+            margin: 6px 0;
+            background-image: linear-gradient(  45deg
+        , #061bb0, #061bb0);
+            -webkit-transition: all .4s ease-in;
+            transition: all .4s ease-in;
+        }
+    }
+    .active-bar {
+        top: 47px;
+    }
+    .active-bar .a { 
+        transform: rotateZ(   43deg  ); 
+        transition: all .5s ease-in;
+    } 
+    .active-bar .b {
+        opacity: 0;
+    }
+    .active-bar .c { 
+        transform: rotateZ(  -46deg );
+        top: 0px;  position: absolute; 
+        transition: all .4s ease-in;
+        margin: 6px 0 0 0px;
+    }
+    .my-nav{
+        width: 100% !important;
+        height: auto;  position: absolute;
+        z-index: 1; top: 99px;
+        overflow-x: hidden;  display: none;
+        left: 0px; background: linear-gradient(
+    150deg
+    , #061bb0 15%, #061bb0 70%, #061bb0 94%);
+        text-align: center;
+        border-bottom: 3px solid #fcfcfca8;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 1rem 0 0;
+    }
+    main header .header-content nav .nav-item-wrp .L01 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    main header .header-content nav .nav-item-wrp .L01 ul {
+         display: block!important;
+    }
+    main header .header-content nav .nav-item-wrp .nav-cmn ul li {
+        padding: 1rem 1rem;
+        display: block;
+        border-bottom: 1px solid #ffffff30;
+    }
+    main header .header-content nav .nav-item-wrp .R01 ul {
+        display: block!important;
+        width: 100%;
+    }
+    main header .header-content nav .nav-item-wrp .R01 {
+        width: 100%;
+        position: relative;
+    }
+    main header .header-content nav .nav-item-wrp .R01 ul li a {
+        color: #fff !important;
+         transition: all 0.3s ease-in-out;
+    }
+    main header .header-content nav .nav-item-wrp .hvr-underline-from-center::before {
+        background: #ffffff;
+        height: 1px;
+    }
+    main header .header-content nav .nav-item-wrp .R01 ul li a:hover {
+        color: #ffffff !important;
+    }
+    main header .header-content nav .nav-item-wrp .R01 .lang-model {
+        position: relative; right: 0;
+        width: 100%; background: #061BB0; 
+        box-shadow: 0 1px 1px 1px #7f7f7f;
+    }
+    main header .header-content nav .nav-item-wrp .L01 .Product-List {
+        position: relative;  background: white;
+        border-right: 1px solid #999999a6; 
+        top: 0px; left: 0;  z-index: 5; width: 100%; 
+    }
+    main header .header-content nav .nav-item-wrp .L01 .Product-List .Product-child{
+        box-shadow: 0 2px 2px 0px #d6d6d6ba;
+    }
+  .Language  i.fas.fa-chevron-down {
+        font-size: 14px;
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading{
+        width: 70%;
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 figure img{
+        max-width: 63%;
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 h2{
+        font-size: 1.2em;
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 h2 span{
+        width: 33px; height: 33px;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-heading label select{
+        font-size: 1.2em;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-item-cmn01 h3 sup {
+        font-size: 11px; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading p {
+        font-size: 1em; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h2 {
+        font-size: 2.3em;  padding: .6rem 0; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h3 {
+        padding: .8rem 1rem;  font-size: 1.1em; margin: 0 0 1rem; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content .qnt-cmn .Package-cmn p {
+        font-size: 13px; padding: .3rem 0 0;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content .button button {
+        padding: 1rem 2rem; border-radius: 4px;font-size: 1.1em;  
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content .button button .fa-arrow-alt-circle-right {
+        font-size: 17px;  margin: 0 .5rem 0 0;
+        vertical-align: text-bottom;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 p {
+        font-size: 15px; 
+    }
+    main footer .footer-content-wrp .footer-cnt .Ft-Right .Ft-head h2 {
+        font-size: 1.2em; 
+    }
+}
+@media only screen and (max-width:1024px){
+    main .Banner-Wrapper .Banner-content .Bnr-Lft h1, main .Banner-Wrapper .Banner-content .Bnr-Lft h2 {
+        font-size: 2.3em;
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Lft p {
+        font-size: 1em;  
+        br{display: none;}
+    }
+    main .Currency_Wrapper .Currency-content .Currency-heading label select {
+        font-size: 1.1em;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-heading h2 {
+        font-size: 1.1em; 
+    }
+    main footer .footer-content-wrp .footer-cnt .Ft-left {
+        width: 100%;
+        margin: 0 0 1rem;
+    }
+    main footer .footer-content-wrp .footer-cnt .Ft-Right {
+        width: 100%;
+        display: inline-block !important;
+    }
+    main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 ul li a{
+        font-size: 15px;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h3 {
+        padding: .8rem 1rem;
+        font-size: 1em; margin: 0 0 1rem;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h2 {
+        font-size: 2.1em;
+        padding: .4rem 0;
+    }
+}
+
+@media only screen and(max-width:992px){
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading {
+        width: 100%;
+        padding: .8rem 1rem;
+        transform: translateY(-25px);
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .Abt01.abt-cmn01 > figure {
+        transform: translateY(-9px);
+    }
+}
+@media only screen and(max-width:767px){
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading {
+        width: 100%;
+        padding: .8rem 1rem;
+        transform: translateY(-25px);
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Lft h1, main .Banner-Wrapper .Banner-content .Bnr-Lft h2 {
+        font-size: 2.2em;
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Lft a {
+        padding: .8rem 2rem .8rem 1.5rem;
+        font-size: 1.2em;
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Lft a i.fas.fa-arrow-right {
+        padding: .5rem; 
+        font-size: 10px;
+        vertical-align: bottom;
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Lft p {
+      line-height: 1.7; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-item-cmn01 {
+        width: 31%;
+        padding: .7rem .9rem; 
+        margin: .6rem 0;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp {
+        width: 80%; 
+        padding: 1rem;  
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading p {
+        font-size: 15px;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h2 {
+        font-size: 2em;
+        padding: .4rem 0;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h3 {
+        padding: .6rem 1rem;
+        font-size: 15px; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content .button button .fa-arrow-alt-circle-right {
+        font-size: 17px;
+        margin: 0 1rem 0 0; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content .button button {
+        padding: 1rem 1.5rem; 
+        font-size: 1em;
+    }
+    main .About-wrapper { 
+        margin: 3rem 0;    padding: 2rem 0;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .Abt01.abt-cmn01 > figure {
+        transform: translateY(0px);
+    }
+    main footer .footer-content-wrp .Ft-logo-heading {
+        width: 100%; padding: 2rem 0;
+    }
+    main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 .Ft-head h2 {
+        font-size: 1.1em; 
+    }
+    main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 .Ft-head {
+        padding: 0 0 1rem;
+    }  
+    main .Banner-Wrapper .Banner-content .Bnr-Lft {
+        width: 100%;    padding: 1rem 0 0rem;
+    } 
+    main .Banner-Wrapper .Banner-content .Bnr-Rgt {
+        width: 100%;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 figure img {
+        max-width: 100%; 
+    }
+}
+
+@media only screen and(max-width:576px){
+    main .Banner-Wrapper .Banner-content .Bnr-Lft h1, main .Banner-Wrapper .Banner-content .Bnr-Lft h2 {
+        font-size: 2em;
+    }
+    main .Banner-Wrapper .bg-banr { 
+        right: 25vw; 
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading {
+        transform: translateY(-35px);
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 figure img {
+        max-width: 90%;
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 {
+        width: 48%;
+        margin: .7rem auto;
+        text-align: center;
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp{
+        align-items: inherit;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-heading label select option {
+        padding: .7rem .2rem;
+        font-size: 1rem; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-item-cmn01 {
+        width: 47%;
+        padding: .7rem .9rem;
+        margin: .6rem 0;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp {
+        width: 100%;
+        padding: 1rem;
+    } 
+    main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 {
+        width: 100%; padding: .5rem 0;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .Abt01.abt-cmn01 > figure{
+        text-align: center;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 figure img {
+        max-width: 67%; 
+    }
+    main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 {
+        width: 26%;
+        margin: 10px auto;
+    }
+}
+
+@media only screen and (max-width:480px){
+    main .Banner-Wrapper .Banner-content .Bnr-Rgt .unorder01 {
+        text-align: left;
+        width: 100%;
+        margin: 0 0 auto auto;
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Rgt .unorder01 .List_active a img {
+          filter: hue-rotate( 42deg  )!important; 
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Rgt .unorder01 li {
+        display: inline-block!important;
+        padding: 1.5rem 0;
+    }
+}

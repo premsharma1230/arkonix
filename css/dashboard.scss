@@ -1,0 +1,848 @@
+@import 'mixin';
+.Dashboar-Wrapper{
+    .dashboard-content{
+        @include flex;
+        justify-content: $between;
+        .main_hvr-Cls{
+            .profile{
+                display: none;
+            }
+        }
+        .Main-left-side{
+            width: 74px;
+            height: 100vh;
+            background: $site-color;//#ff9f07;
+            padding: 2rem 0 1rem;
+            position: fixed;
+            z-index: 5;
+            transition: $transition; 
+            &:hover{
+             transition: $transition;
+             width: 15%;
+             box-shadow: 2px 0px 6px 2px #d4d4d480;
+             .text-btn{
+                 transition: $transition;
+                 transform: scale(1)!important;
+             }
+            }
+            .Dashboard-unorder{ 
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                margin: 0 auto;  
+                // background: #ff9f07; 
+                .profile{
+                    display: $none;
+                    .profile-unord {
+                       padding: 1rem;
+                       background: #fffffffa;
+                       .pro-cmn{
+                           padding: .5rem;
+                           text-align: justify;
+                           text-transform: $cap;
+                           font-size: 1em; 
+                           background: #eee;
+                           margin: .5rem 0;
+                           border-radius: 5px;
+                           padding: .5rem .5rem;
+                           transition: $transition;
+                           &:hover{
+                           transition: $transition;
+                           cursor: pointer;
+                           background: rgba(153, 153, 153, 0.589);
+                           }
+                           a{
+                            color: #061bb0;
+                            text-decoration: $none;
+                           }
+                       }
+                   }
+               } 
+                .dash-item1{
+                    background: #00000021!important;
+                }
+              .dash-cmn1{
+                padding: 1.1rem 0;
+                border-bottom: 1px solid #ffffff3b;
+                overflow: hidden;
+                height: 70px;
+                display: flex;
+                align-items: center; 
+                transition: $transition; 
+                i.fas.fa-angle-down{
+                    vertical-align: middle;
+                    padding: 0 .3rem;
+                }
+                &:hover{
+                    background: #00000021!important;
+                    transition: $transition;
+                }
+                  a{
+                      color: #fff;
+                      text-decoration: $none;
+                      padding: 0 1.3rem; 
+                      display: flex;
+                      align-items: center;  
+                      .Icon{ 
+                        padding: 0px;
+                        width: 25px;
+                        font-size: 1.4em;
+                        margin-right: 1.3rem; 
+                        img{
+                            width: 50px; 
+                            transform: translateX(-13px);
+                            filter: grayscale(100%);
+                            transition: $transition;
+                            &:hover{
+                            transition: $transition;
+                            filter: inherit;
+                            }
+                        } 
+                      }
+                      .text-btn{
+                          font-size: 1.2em;
+                           transform: scale(0);
+                          transition: $transition;
+                          img{
+                            max-width: 100%;
+                        } 
+                      }
+                  }
+              }
+            }
+        }
+        .Main-right-side{
+            // width: 75%;
+            width: 90%;
+            margin: 0 auto 0 9rem; 
+            height: 100vh;
+            .right-heading{
+                color: #fff; 
+                padding: 144px 39px 70px; 
+                background: linear-gradient(  45deg , #061bb0 33% ,#ffffff 100%);
+                border-radius: 30px;
+                margin-top: -121px;
+                transform: rotate(-7deg);
+                margin-bottom: 90px;
+                position: relative;
+                font-weight: 700; 
+            }
+            .Rh-child{
+                transform: rotate(7deg);
+                h2{
+                    font-size: 2.3em;
+                    text-transform: $cap;
+                    line-height: 1.5;
+                    word-spacing: 1px;
+                    font-weight: bold;
+                }
+                .breadcumb-btn{
+                    ul{
+                        @include flex;
+                        justify-content:flex-start;
+                        width: 50%;
+                        padding: .5rem 0 0;
+                        li{
+                            a{
+                                font-size: 1em;
+                                text-transform: $cap;
+                                color: $fff;
+                                text-decoration: $none; 
+                                transition: $transition;
+                                &:hover{
+                                    transition: $transition;
+                                    opacity: .77;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .Rt-content-wrp{
+                // ---Bit--tabs----//
+                .Bit-tabs-wrp{
+                    .Bit-active{
+                        border-radius: 5px;
+                        background: #ffffff8f!important;
+                        box-shadow: inset 0 0 9px 9px #9999995c;
+                        padding: 1rem 0;transition:$transition;
+                    }
+                    .Bit-unorder{
+                        @include flex;
+                        justify-content: flex-start;
+                        border-bottom: 1px solid #9999994f;
+                        padding: 2rem 0 1rem;
+                        
+                        li{
+                            margin-right: 1rem;
+                            padding: 1rem 0; 
+                            width: 200px;
+                            height: 100%; 
+                            text-align: $mid;transition:$transition;
+                            &:hover{
+                                background: #eeeeee63;
+                                border-radius: 5px;transition:$transition;
+                                .img{
+                                    transform: scale(.95);transition:$transition;
+                                }
+                            }
+                            a{
+                                text-decoration: $none;
+                                h2{
+                                    font-size: 1.2em;
+                                    text-transform: $cap;
+                                    line-height: 1.5;
+                                    word-spacing: 1px;
+                                    font-weight: $bld;color: #061bb0;
+                                    padding: .5rem 0 .2rem;
+                                }
+                                figure{
+                                    img{
+                                    max-width: 39%;transition:$transition;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // ---end---here---//
+
+                // --Bitcoin--contnet---
+               .Bitcoin-Cnt-wrp{
+                   padding: 1rem 0 2rem;
+                   .bitCn-heading{
+                       h2{
+                           color:$site-color;
+                           font-size: 1.3em;
+                           text-transform:$upper;
+                           word-spacing: 1px;
+                           line-height: 1.5;
+                           padding: .5rem 0;
+                           font-weight: $bld;
+                           position: relative;
+                           display:$inline-b;
+                           &::before{
+                               content: '';
+                               width: 0;
+                               height: 2px;
+                               background: $site-color;
+                               position: absolute;
+                               bottom: 0;
+                               left: 0; 
+                           }
+                       }
+                   }
+                   .Bit-child-wrp{
+                    //    @include flex;
+                    //    justify-content: $between;
+                       display:  grid;
+                       grid-template-columns: repeat(4, 1fr);;
+                       grid-gap: 1rem;
+                       margin: 1.5rem 0 0;
+                       .Bit-Cmn{
+                        //    width: 23%;
+                           padding: 1rem 1rem;
+                           background: #eeeeee63;
+                           border: 2px dotted #061bb0; 
+                           border-radius: 5px;
+                           .B-top{
+                               @include flex;
+                               justify-content: $between;
+                               align-items: $inherit;
+                               .b1{
+                                   @include flex;
+                                   justify-content: $between;
+                               }
+                               .b-cmn05{
+                                   width: 48%;
+                                   h4{
+                                       font-size: 1em;
+                                       text-transform: $upper;
+                                       line-height: 1.5;
+                                       color: $site-color;
+                                   }
+                                   figure{  
+                                       h2{
+                                           font-size: 1.6em;
+                                           text-transform: $cap;
+                                           font-weight: $bld;
+                                           line-height: 1.5;
+                                           color: #f6921a;
+                                           sup{
+                                            font-size: 14px;
+                                            vertical-align: top;
+                                            padding-left: 1px;
+                                            color: #000;
+                                           }
+                                       }
+                                       span{
+                                        font-size: 15px;
+                                        line-height: 1.5;
+                                        word-spacing: 1px;
+                                        display: $block;
+                                       }
+                                   }
+                                   img{
+                                    max-width: 58%;
+                                    animation: Danime 3s linear infinite;
+                                    @keyframes Danime {
+                                        0%,100%{
+                                            transition: $transition;
+                                            transform: scale(.89);
+                                        }
+                                        50%{
+                                            transition: $transition;
+                                            transform: scale(1);
+                                            filter: drop-shadow(1px 1px 2px #999);
+                                        }
+                                    }
+                                   }
+                                   h3{
+                                       font-size: 14px;
+                                       line-height: 1.5;
+                                       word-spacing: 1px;
+                                       padding: .3rem .5rem .3rem 0;
+                                       margin: .5rem 0 0;
+                                       background: $site-color;
+                                       color: $fff;
+                                       text-transform: $cap; 
+                                       position: relative;
+                                       &::before{
+                                        content: '';
+                                        width: 0;
+                                        height: 100%;
+                                        background: #eeeeee94;
+                                        position: absolute;
+                                         animation: backgrdanime 3s linear infinite;
+                                        top: 0;
+                                        left: 0%;
+                                       }
+                                   }
+                               }
+                               .b2{
+                                   text-align: right;
+                               }
+                           }
+                           .Bit__Unord {
+                            margin: 1rem 0;
+                            li{
+                                text-align: $mid;
+                                padding: .5rem 0;
+                                border-bottom: 1px dotted $site-color;
+                                font-size: 15px;
+                                text-transform: $cap;
+                                color: #999;
+                                line-height: 1.5;
+                                letter-spacing: 1px;
+                                word-spacing: 1px;
+                                 a{
+                                 text-transform: $cap;
+                                 font-size: 1rem;
+                                 padding: .7rem 1.9rem;
+                                 border-radius: 5px;
+                                 background: $site-color;
+                                 color: $fff;
+                                 text-decoration: $none;
+                                 display: $inline-b;
+                             }
+                             .hvr-bounce-to-top{
+                                 &::before{
+                                    background: #EEBA2B;
+                                    border-radius: 5px;
+                                 }
+                             }
+                            } 
+                         } 
+                       }
+                   }
+               }
+                //--Bitcoind---content-wrp
+            } 
+        }
+    }
+}
+
+// --------Profile-----Page---------//
+//------***********-----------------//
+// --------Profile-----Page---------//
+.Profile-Wrapper{
+    .main-Profile-wrp{
+        width: 100%;
+        padding: 1rem 0 0;    
+        .profile-heading{
+            width: 100%;
+            @include flex;
+            justify-content: flex-start;
+            a{
+                margin: 0 1rem 0 0;
+                display: $inline-b;
+                font-size: 1.2em;
+                text-transform: $cap;
+                word-spacing: 1px;
+                line-height: 1.5;
+                padding: .6rem 2.5rem;
+                border-radius: 5px;
+                border-bottom: 2px solid;
+                background: #061bb0;
+                color: #fff;
+                text-decoration: $none;
+            }
+            .hvr-bounce-to-top{
+                &::before{
+                    background: #EEBA2B;
+                    border-radius: 3px;
+                }
+            }
+        }
+        .Profile-content{
+            .Pro-tab-heading{
+                width: 90%;
+                @include flex;
+                justify-content: $between;
+                align-items: inherit;
+                border-bottom: 1px solid #999;
+                padding: 2rem 0 0rem;
+                .Edit2{
+                    display: none;
+                    font-size: 1.3em;
+                    font-weight: $bld; 
+                    padding: .7rem 2.5rem;
+                }
+                .Edit1{     padding: .7rem 2.5rem;}
+                h2{
+                    font-size: 1.7em;
+                    text-transform: $cap;
+                    word-spacing: 1px;
+                    line-height: 1.5;
+                    color: #000; 
+                    border-bottom: 3px solid $site-color;
+                    padding: 0 0 1rem;
+                }
+                .ProActive-btn{
+                    .Edit1{display: none;}
+                    .Edit2{display: block;}
+                }
+                a{
+                    text-transform: $cap;
+                    font-size: 1.1em;
+                    color:$fff;
+                    word-spacing: 1px;
+                    display: $inline-b;
+                    background:$site-color; 
+                    border-radius: 5px;
+                    // padding: .7rem 2.5rem; 
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none; 
+                } 
+                .hvr-bounce-to-top{
+                    &::before{
+                        background: #EEBA2B;
+                        border-radius: 3px; 
+                    }
+                }
+            }
+            #Protab2{
+             display: none;
+             .file-wrp{
+                 position: relative;
+                 overflow: hidden; 
+                     &:hover{
+                         transition: $transition;
+                         .upload{
+                             left: 0;
+                             transition: $transition;
+                             &:hover{ 
+                                 .btn{
+                                    transform: scale(.90);
+                                    transition: $transition;
+                                 }
+                             }
+                     } 
+                 }
+                 .upload{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;cursor: pointer;
+                    background: #eee;
+                    background: #04040491;
+                    left: 500px;
+                    top: 0; 
+                    @include flex;
+                    transition: $transition;
+                    cursor: pointer;
+                    // transform: scale(0);
+                    .btn{
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        color: #fff;
+                        cursor: pointer;
+                        transition: $transition;
+                        width: 100%;
+                        height: 100%;
+                        @include flex;
+                    }
+                 }
+             }
+            }
+            .Profile-sub-child-wrp{
+                @include flex;
+                justify-content: $between;
+                align-items: inherit;
+                padding: 2rem 0 0;
+                .Pro--P1{
+                   width: 30%;
+                   figure{
+                    border: 1px solid #99999954;
+                    border-radius: 5px;
+                    padding: .5rem;
+                    text-align: $mid;
+                       img{
+                           max-width: 100%;
+                       }
+                   }
+                   figcaption{
+                       padding: 1.7rem 0 0;
+                       .fg-p1{
+                           padding-bottom: .8rem;
+                           label{
+                               font-size: 1em;
+                               text-transform: $cap;
+                               word-spacing: 1px;
+                               line-height: 1.5;
+                               color: #646464;
+                           }
+                           input{
+                            color: #9e9e9e; 
+                            padding: .7rem .5rem;
+                            text-transform: $cap;
+                            border: 1px solid #eee;
+                            font-size: 15px;
+                            transition: $transition;
+                            margin: .5rem 0;
+                            border-radius: 5px;
+                            width: 100%;
+                            outline: none;                            
+                            &:hover{
+                                border: 1px solid #999;
+                                transition: $transition;
+                            }
+                            &:focus{
+                                transition: $transition;
+                                box-shadow: 0 0 4px 1px #99999957;
+                                border: 1px solid #cecece;
+                            }
+                           }
+                           p{
+                               color: #9e9e9e;
+                               padding: .5rem 0;
+                               font-size: 15px;
+                               text-transform: $cap;
+                               word-spacing: 1px;
+                               line-height: 1.5;
+                           }
+                       }
+                   }
+                }
+                .Pro--P2{
+                    width: 50%;
+                    margin: 0 auto 0 auto;
+                    .proheading{
+                        padding: 1rem;
+                        width: 100%;
+                        background: $site-color;
+                        border-radius: 5px;
+                        h2{
+                            font-size: 1.8em;
+                            word-spacing: 1px;
+                            line-height: 1.5;
+                            text-transform: $cap;
+                            color: $fff;
+                            font-weight: $bld;
+                        }
+                        h4{
+                            font-size: 15px;
+                            word-spacing: 1px;
+                            line-height: 1.5;
+                            text-transform: $cap;
+                            color: $fff; 
+                            padding: .3rem 0 0;
+                        }
+                    }
+                    .pro-cnt{
+                        @include flex;
+                        justify-content: $between;
+                        padding: 0 1rem;
+                        .ProL-cmn{
+                            figcaption{
+                                padding: 1.7rem 0 0;
+                                .fg-p1{
+                                    padding: 0 0 1rem;
+                                    h3{
+                                        font-size: 1em;
+                                        text-transform: $cap;
+                                        word-spacing: 1px;
+                                        line-height: 1.5;
+                                        color: #646464;
+                                    }
+                                    input{
+                                        color: #9e9e9e; 
+                                        padding: .7rem .5rem;
+                                        text-transform: $cap;
+                                        border: 1px solid #eee;
+                                        font-size: 15px;
+                                        transition: $transition;
+                                        margin: .5rem 0;
+                                        border-radius: 5px;
+                                        width: 100%;
+                                        outline: none;                            
+                                        &:hover{
+                                            border: 1px solid #999;
+                                            transition: $transition;
+                                        }
+                                        &:focus{
+                                            transition: $transition;
+                                            box-shadow: 0 0 4px 1px #99999957;
+                                            border: 1px solid #cecece;
+                                        }
+                                       }
+                                    p{
+                                        color: #9e9e9e;
+                                        padding: .8rem 0;
+                                        font-size: 15px;
+                                        text-transform: $cap;
+                                        word-spacing: 1px;
+                                        line-height: 1.5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------Cart-------Page--------------//
+//---*********************************-------//
+//---------------Cart-------Page--------------//
+.Cart-detail-wrp{
+    width: 100%;
+    .Cart-content{
+        width: 100%;
+        .cart-dtl{
+            .cart-item1{
+             li{
+                font-size: 1.1em;
+                text-transform: $upper;
+                word-spacing: 2px;
+                letter-spacing: 0px;
+                color: #000;
+             }
+            }
+            .cart-unorder{
+                @include flex;
+                justify-content: $between;
+                border-bottom: 1.5px solid $site-color;
+                li{
+                    list-style-type: $none;
+                    padding: .9rem 0;
+                    width: 24%; 
+                }
+                .cart-H-item4{
+                    .quanty-wrp{
+                        @include flex;
+                        justify-content: $between;
+                        .q1{
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+            .cart-item2{
+                border: inherit;
+                li{
+                    font-size: 1.1rem;
+                    word-spacing: 1px;
+                    text-transform: $cap;
+                    img{max-width: 18%;}
+                    h2{color: $site-color;}
+                    h3{
+                        padding: .4em .6em;border-radius: 5px;
+                        background: $site-color;
+                        color: $fff; display: $inline-b;
+                    }
+                    h4{
+                        padding: .3rem 1.5rem;
+                        border-radius: 5px;
+                        background: #D9D9D9;
+                        border-radius: 3px;
+                    }
+                    p{color: #999;}
+                    .Qt-btn{
+                        padding: .5rem;
+                        border: 1px solid #fff;
+                        background: #061bb0;
+                        color: #fff;
+                        border-radius: 4px;
+                        cursor: pointer;transition: $transition;
+                        font-size: 1em;
+                        word-spacing: 1px;
+                        .fa-times{font-size: 15px;}
+                        &:hover{
+                            transition: $transition;
+                            background: #EEBA2B;
+                        }
+                    }
+                }
+            }
+            // ----item--3--//
+            .cart-item3{
+                 border-top: 1.5px solid #061bb0;
+                 margin: 1.9rem 0 0;
+                li{
+                    input{
+                        padding: .6rem .5rem;
+                        text-transform: $cap;
+                        color:#061bb0;
+                        border: 1px solid $site-color;
+                        outline: none;
+                        transition: $transition;
+                        border-radius: 5px;
+                        &::placeholder{color:#061bb0;}
+                        &:focus{
+                            transition: $transition;
+                            box-shadow: 0 0 2px 1px rgb(122, 142, 255); 
+                        }
+                    }
+                    .quanty-wrp{
+                       .q1{
+                           @include flex;
+                           justify-content: space-between;
+                           h5{color: #061bb0; padding-right: 1rem;}
+                           p{color: #999;}
+                       } 
+                    }
+                }
+            }
+            //------item---4---//
+            .cart-item4{
+                li.cart-H-item3 {
+                    display: flex;
+                    align-items: center;
+                     h3 {
+                        padding: 0 .8rem;
+                        font-size: 1em;
+                        word-spacing: 1px;
+                        line-height: 1.5;
+                    }
+                    input{cursor: pointer;}
+                    a{
+                        text-decoration: $none;
+                        transition: $transition;
+                        color: #061bb0;
+                        text-transform: $cap;
+                        font-size: 1em;
+                        word-spacing: 1px;
+                        line-height: 1.5;
+                        &:hover{
+                        transition: $transition;
+                        color: #000;
+                        text-decoration: underline;
+                        }
+                    }
+                }
+                .cart-H-item4{
+                  .quanty-wrp{
+                      display: flex;
+                      align-items: center;
+                      justify-content: center!important;
+                      >.q1{
+                          display: flex;
+                          align-items: center;
+                          margin: 0 .5rem;
+                          transition: all 0.3s ease-in-out;
+                          button{
+                            padding: .5rem;
+                            border: 1px solid #fff;
+                            background: #061bb0;
+                            color: #fff;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            transition: all 0.3s ease-in-out;
+                            font-size: 1em;
+                            word-spacing: 1px;
+                            outline: none;
+                            &:hover{
+                            transition: all 0.3s ease-in-out;
+                            color: #000;
+                            background: #EEBA2B;
+                            }
+                          }
+                      }
+                  }  
+                }
+            } 
+        }
+    }
+}
+
+
+//---------end------Cart-------Page-----here-------------
+
+//--------Privacy-------Page--------------//
+//---*********************************-------//
+//---------------Privacy-------Page--------------//
+.Privacy-Wrapper{
+    header .header-content nav .nav-item-wrp .nav-cmn ul li a{
+        color: #000!important;
+    }
+    header .header-content nav .nav-item-wrp .hvr-underline-from-center::before{
+     background: #000!important;   
+    }
+    .Privacy-content-wrp{
+      width: 100%;
+      position: relative;
+      .Privacy-heading{
+        width: 90%;
+        margin: 0 auto;
+        padding: 3rem 0 2rem;
+          h2{
+            font-size: 1.9em;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            text-transform: capitalize;
+            font-weight: bold;
+            text-align: center; 
+            text-transform: uppercase;
+            span{
+                color:$site-color;
+            }
+          }
+      }
+      .Privacy-child-cnt{
+          padding: 1rem 0 4rem;
+          p{
+              font-size: 1em;
+              text-transform: $cap;
+              line-height: 1.5; 
+              padding: .5rem 0;
+              color: #999;
+          }
+          h2{
+              font-size: 1.3em;
+              text-transform: $cap;
+              line-height: 1.5;
+              letter-spacing: 1px;
+              padding: .5rem 0;
+              color: #000;
+          }
+      }
+    }
+}
+
+//---------------Privacy-------Page--------------//

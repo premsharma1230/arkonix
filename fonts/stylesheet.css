@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'FiraSans-Regular';
+    src: url('FiraSans-Regular.eot');
+    src: url('FiraSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FiraSans-Regular.woff2') format('woff2'),
+        url('FiraSans-Regular.woff') format('woff'),
+        url('FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asap-SemiBold';
+    src: url('Asap-SemiBold.eot');
+    src: url('Asap-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Asap-SemiBold.woff2') format('woff2'),
+        url('Asap-SemiBold.woff') format('woff'),
+        url('Asap-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
